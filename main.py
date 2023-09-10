@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import datetime
 import json
 
+
 app = Flask(__name__)
 
 # Define the route for the endpoint
