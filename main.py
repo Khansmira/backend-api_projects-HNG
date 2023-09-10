@@ -11,6 +11,10 @@ def get_info():
     slack_name = request.args.get('slack_name')
     track = request.args.get('track')
 
+    # Validate that both query parameters are provided
+    if not slack_name or not track:
+        return jsonify({"error": "Both slack_name and track are required."}), 400
+
     # Get the current day of the week in full
     current_day_of_week = datetime.datetime.utcnow().strftime('%A')
 
