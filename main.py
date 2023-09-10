@@ -14,7 +14,7 @@ def get_info():
     current_day_of_week = datetime.datetime.utcnow().strftime('%A')
 
     # Get the current UTC time
-    utc_time = datetime.datetime.now.now().strftime('%Y-%m-%dT %H:%M:%SZ')
+    utc_time = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
     # GitHub repo URL and file URL
     github_repo_url = 'https://github.com/Khansmira/backend-api_projects-HNG.git'
